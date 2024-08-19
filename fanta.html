@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--X3dom -->
+    <script src="https://kit.fontawesome.com/50c0633212.js" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome CSS-->
+     <link rel="stylesheet" href="css/x3dom.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Coca Cola 3D App</title>
+
+  </head>
+
+  <body>
+
+    <!-- Logo and navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+          <h1>1</h1>
+          <h1>oca</h1>
+          <h2>Cola</h2>
+          <h3>Journey</h3>
+          <p>Refreshing the world, one story at a time</p>
+          </a>
+          </div>
+
+          <!-- Collapsible Navbar Menu Icon-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Link Menu item button to the links class navbar-collapse selector -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+            <!-- Links -->
+            <ul class="nav navbar-nav ml-auto"> <!-- Use mx-auto to align centre, default to left or use mr-auto-->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Drinks</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                  <a class="dropdown-item" href="sprite.html">Sprite</a>
+                  <a class="dropdown-item" href="fanta.html">Fanta</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      
+    <br>
+    <!-- This is coke page -->
+    <div class="container-fluid main_contents">
+
+        <!-- Row to hold two cards to hold 1) the X3D model and 2) the gallery -->
+        <div class="row">
+            <!-- column to hold the X3D model-->
+            <div class=" col-sm-9">
+              <div id="card text-left">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="coke.html">Coke</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sprite.html">Sprite</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="fanta.html">Fanta</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Bootstrap 4 card body to hold information about the X3d model -->
+                <div class="card-body">
+                  <h4 class="card-title">Fanta X3D Model</h4>
+
+                  <!-- Place the x3d code here -->
+                   <!-- temporary image instead of <div id="main_3d_image"></div> -->
+                    <div class="model3D">
+                      <x3d width="500px" height="400px">
+                        <scene>
+                          <inline url="assets/x3d/fantaAni.x3d"></inline>
+                        </scene>
+                      </x3d>
+                    </div>
+
+                    <p class="card-text">This X3d model of the fanta can has been created in 3ds Max, exported to VRML and converted, using the instantreality transcoders, to X3D for display online</p>
+                    <h5 class="card-subtitle">Camera Views</h5>
+                    <div class="camera-btns">
+                      <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                        <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                        <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                        <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                        <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                        <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+                <!-- Column to hold 3D image gallery -->
+                <div class="col-sm-3">
+                  <div class="card text-left">
+                    <div class="card-header gallery-header">
+                      Gallery
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">3D Image Gallery</h4>
+                      <a href="coke.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
+                        alt="Coca Cola">
+                      </a>
+                      <a href="sprite.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg"
+                        alt="Sprite">
+                      </a>
+                      <a href="fanta.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fanta.jpg"
+                        alt="Fanta">
+                      </a>
+                      <p class="card-text"> These 3D images of the Coke can, Sprite bottle and Dr Pepper can are rendered in 3ds Max 2025</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Row to hold 1 card to hold the coca cola description text, etc. -->
+             <div class="row">
+              <!-- coca cola column -->
+               <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="class-title">Fanta</h3>
+                    <p class="card-text">Fanta is a vibrant, fruit-flavored soft drink that originated in Germany during World War II. It is known for its bright colors and a wide range of fruity flavors, such as orange, grape, and strawberry. 
+                      Fanta is made by combining carbonated water with high-fructose corn syrup or sugar, natural and artificial flavors, and sometimes fruit juice. The drink is carbonated to give it a fizzy texture and is often enjoyed as a refreshing, sweet beverage. Its playful branding and variety of flavors make it a popular choice for those seeking a fruity alternative to traditional cola drinks.</p>
+                  </div>
+                </div>
+               </div>
+             </div>
+
+          </div> <!-- End main_contents container-fluid -->
+
+          <!-- Your 3D app footer -->
+           <nav class="navbar navbar-expand-sm footer">
+            <div class="container-fluid">
+              <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline"></span>&copy 2024 Mobile Web 3D Applications</p>
+              </div>
+              <div class="navbar-text social">
+                <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+              </div>
+            </div>
+           </nav>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- include the x3dom javascript -->
+    <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+
+  </body>
+</html>
